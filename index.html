@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Ridho Berkah Jaya - Mitra Terpercaya Solusi Bisnis & Layanan Berkualitas</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts Poppins & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0a1120',
+                            950: '#030712',
+                        },
+                        emeraldCustom: {
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        goldCustom: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-pattern-dots {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-goldCustom-500 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-goldCustom-500"></i> PT. RIDHO BERKAH JAYA</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-goldCustom-500"></i> info@ridhoberkahjaya.co.id</span>
+                <span class="hidden lg:flex items-center gap-1.5"><i class="fa-solid fa-phone text-goldCustom-500"></i> (021) 8899-7766</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-emeraldCustom-900/80 text-emerald-300 px-2 py-0.5 rounded text-[11px] border border-emeraldCustom-700">ISO 9001:2015 Certified</span>
+                <a href="#kontak" class="text-goldCustom-400 hover:text-goldCustom-500 font-semibold flex items-center gap-1 transition-colors">Ajukan Penawaran <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-navy-900 to-emeraldCustom-900 rounded-2xl flex items-center justify-center text-goldCustom-500 shadow-md group-hover:scale-105 transition-transform border border-goldCustom-500/30">
+                        <i class="fa-solid fa-crown text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="block font-heading font-extrabold text-lg sm:text-xl text-navy-900 leading-tight">RIDHO BERKAH JAYA</span>
+                        <span class="block text-[11px] text-emeraldCustom-700 font-bold tracking-widest uppercase">Mitra Solusi Bisnis & Industri</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+                    <a href="#beranda" class="hover:text-emeraldCustom-700 transition-colors">Beranda</a>
+                    <a href="#profil" class="hover:text-emeraldCustom-700 transition-colors">Profil</a>
+                    <a href="#layanan" class="hover:text-emeraldCustom-700 transition-colors">Layanan</a>
+                    <a href="#program" class="hover:text-emeraldCustom-700 transition-colors">Program CSR</a>
+                    <a href="#kalkulator" class="hover:text-emeraldCustom-700 transition-colors">Kalkulator</a>
+                    <a href="#galeri" class="hover:text-emeraldCustom-700 transition-colors">Portofolio</a>
+                    <a href="#kontak" class="hover:text-emeraldCustom-700 transition-colors">Kontak</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20PT.%20Ridho%20Berkah%20Jaya,%20saya%20ingin%20konsultasi%20layanan" target="_blank" class="px-5 py-2.5 bg-gradient-to-r from-emeraldCustom-700 to-emeraldCustom-900 hover:from-emeraldCustom-800 hover:to-navy-900 text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-goldCustom-400"></i>
+                        <span>Konsultasi WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Beranda</a>
+            <a href="#profil" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Profil Perusahaan</a>
+            <a href="#layanan" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Layanan & Sektor Usaha</a>
+            <a href="#program" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Program CSR & Kemitraan</a>
+            <a href="#kalkulator" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Kalkulator Biaya</a>
+            <a href="#galeri" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Portofolio Proyek</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-emeraldCustom-700">Hubungi Kami</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="w-full text-center block py-3 bg-goldCustom-500 text-navy-950 font-bold rounded-xl shadow-md">Ajukan Penawaran Proyek</a>
+        </div>
+    </header>
+
+    <section id="beranda" class="relative bg-navy-950 text-white overflow-hidden py-20 lg:py-28 bg-pattern-dots">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Left -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800 border border-goldCustom-500/40 text-goldCustom-400 text-xs sm:text-sm font-semibold backdrop-blur-sm">
+                        <i class="fa-solid fa-certificate text-emerald-400"></i>
+                        <span>Perusahaan Multisektor Terintegrasi & Amanah</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-tight text-white">
+                        Mitra Terpercaya Solusi Bisnis & <span class="gold-gradient-text">Layanan Berkualitas</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        **PT. Ridho Berkah Jaya** memberikan layanan profesional di bidang General Contractor, Perdagangan Umum, Distributor & Supplier, Logistik, serta Pengembangan Program Kemitraan UMKM berstandar nasional.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#kontak" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-goldCustom-500 to-goldCustom-600 hover:from-goldCustom-600 hover:to-goldCustom-700 text-navy-950 font-bold rounded-2xl shadow-xl transition-all flex items-center justify-center gap-3 text-base">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Ajukan Kerja Sama</span>
+                        </a>
+                        <a href="#layanan" class="w-full sm:w-auto px-8 py-4 bg-navy-800/80 hover:bg-navy-800 border border-slate-700 text-white font-semibold rounded-2xl transition-all flex items-center justify-center gap-2 text-base backdrop-blur-sm">
+                            <i class="fa-solid fa-layer-group text-emerald-400"></i>
+                            <span>Jelajahi Layanan</span>
+                        </a>
+                    </div>
+
+                    <!-- Statistics Counter -->
+                    <div class="pt-10 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center lg:text-left">
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-goldCustom-400">150+</span>
+                            <span class="text-xs text-slate-400">Proyek Selesai</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-400">98%</span>
+                            <span class="text-xs text-slate-400">Kepuasan Klien</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-goldCustom-400">50+</span>
+                            <span class="text-xs text-slate-400">Mitra Kerja</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-400">24/7</span>
+                            <span class="text-xs text-slate-400">Dukungan Operasional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Cards Showcase -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-goldCustom-500 to-emeraldCustom-600 rounded-3xl blur opacity-30"></div>
+                        <div class="relative bg-navy-900 border border-slate-800 p-6 rounded-3xl backdrop-blur-md shadow-2xl space-y-6">
+                            
+                            <div class="flex items-center gap-4 border-b border-slate-800 pb-4">
+                                <div class="w-14 h-14 bg-emeraldCustom-900/60 border border-emeraldCustom-600/50 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl">
+                                    <i class="fa-solid fa-hard-hat"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-bold text-lg text-white">General Contractor</h3>
+                                    <p class="text-xs text-slate-400">Konstruksi, infrastruktur, & renovasi gedung.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 border-b border-slate-800 pb-4">
+                                <div class="w-14 h-14 bg-goldCustom-500/20 border border-goldCustom-500/40 rounded-2xl flex items-center justify-center text-goldCustom-400 text-2xl">
+                                    <i class="fa-solid fa-boxes-packing"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-bold text-lg text-white">Perdagangan & Supplier</h3>
+                                    <p class="text-xs text-slate-400">Pengadaan barang pabrikasi & barang industri.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 bg-emeraldCustom-900/60 border border-emeraldCustom-600/50 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading font-bold text-lg text-white">Logistik & Distribusi</h3>
+                                    <p class="text-xs text-slate-400">Pengiriman armada aman & tepat waktu.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                                <p class="text-xs text-goldCustom-400 font-semibold mb-1"><i class="fa-solid fa-shield-halved mr-1"></i> Komitmen Prinsip Syariah & Tata Kelola Bersih</p>
+                                <span class="text-[11px] text-slate-400">Mengutamakan Transparansi, Kualitas, & Kebersamaan</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emeraldCustom-700 font-extrabold text-xs tracking-widest uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Mengenal Kami</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-3">Profil PT. Ridho Berkah Jaya</h2>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-5">
+                    <h3 class="text-2xl font-heading font-bold text-navy-900 leading-snug">
+                        Membangun Bisnis Berkelanjutan dengan Integritas & Nilai Keberkahan
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        **PT. Ridho Berkah Jaya** berdiri sebagai entitas bisnis profesional yang berfokus pada penyediaan solusi terpadu di berbagai sektor industri strategis. Kami percaya bahwa keberhasilan usaha berawal dari komitmen memberikan mutu terbaik, transparansi kerja, dan kepatuhan pada regulasi hukum serta etika bisnis Islami.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Didukung oleh tenaga ahli berpengalaman dan manajemen berstandar nasional, kami siap menjadi mitra kerja andalan bagi instansi pemerintah, BUMN, perusahaan swasta, maupun pelaku UMKM seluruh Indonesia.
+                    </p>
+
+                    <!-- Vision & Mission Quick Tabs -->
+                    <div class="pt-2 space-y-3">
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-eye text-goldCustom-600"></i> VISI PERUSAHAAN
+                            </h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">Menjadi perusahaan multisektor nasional terdepan yang terpercaya, inovatif, dan membawa manfaat serta keberkahan bagi seluruh pemangku kepentingan.</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-bullseye text-emeraldCustom-700"></i> MISI PERUSAHAAN
+                            </h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">Menyelenggarakan layanan berkualitas tinggi secara efisien, memperluas jejaring kemitraan UMKM, serta berkontribusi nyata pada pembangunan ekonomi masyarakat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nilai-Nilai Utama (Values Grid) -->
+                <div class="lg:col-span-6">
+                    <div class="bg-navy-900 p-8 rounded-3xl text-white shadow-xl relative overflow-hidden border border-slate-800">
+                        <div class="absolute -right-8 -bottom-8 text-navy-800/40 text-9xl font-black">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="relative z-10 space-y-6">
+                            <div>
+                                <span class="text-goldCustom-400 text-xs font-bold uppercase tracking-wider">Corporate Core Values</span>
+                                <h3 class="text-2xl font-bold mt-1 text-white">4 Pilar Nilai PT. Ridho Berkah Jaya</h3>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                <div class="p-4 bg-navy-800/80 rounded-2xl border border-slate-700 space-y-1">
+                                    <div class="w-8 h-8 bg-goldCustom-500/20 text-goldCustom-400 rounded-lg flex items-center justify-center font-bold text-sm">1</div>
+                                    <h4 class="font-bold text-white text-sm">AMANAH</h4>
+                                    <p class="text-[11px] text-slate-300">Jujur, dapat dipercaya, dan memegang teguh setiap kesepakatan kerja.</p>
+                                </div>
+
+                                <div class="p-4 bg-navy-800/80 rounded-2xl border border-slate-700 space-y-1">
+                                    <div class="w-8 h-8 bg-emeraldCustom-900 text-emerald-400 rounded-lg flex items-center justify-center font-bold text-sm">2</div>
+                                    <h4 class="font-bold text-white text-sm">PROFESIONAL</h4>
+                                    <p class="text-[11px] text-slate-300">Standar pengerjaan tinggi, disiplin waktu, dan ditangani tenaga ahli.</p>
+                                </div>
+
+                                <div class="p-4 bg-navy-800/80 rounded-2xl border border-slate-700 space-y-1">
+                                    <div class="w-8 h-8 bg-emeraldCustom-900 text-emerald-400 rounded-lg flex items-center justify-center font-bold text-sm">3</div>
+                                    <h4 class="font-bold text-white text-sm">BERKAH</h4>
+                                    <p class="text-[11px] text-slate-300">Mengutamakan etika kebaikan, kehalalan operasional, dan kepedulian sosial.</p>
+                                </div>
+
+                                <div class="p-4 bg-navy-800/80 rounded-2xl border border-slate-700 space-y-1">
+                                    <div class="w-8 h-8 bg-goldCustom-500/20 text-goldCustom-400 rounded-lg flex items-center justify-center font-bold text-sm">4</div>
+                                    <h4 class="font-bold text-white text-sm">INOVATIF</h4>
+                                    <p class="text-[11px] text-slate-300">Terus bertransformasi mengikuti perkembangan teknologi & industri.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-slate-100/70 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emeraldCustom-700 font-extrabold text-xs tracking-widest uppercase bg-emerald-100/80 px-3 py-1 rounded-full">Sektor & Solusi</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-3">Layanan Utama Perusahaan</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">Dukungan komprehensif untuk berbagai kebutuhan industri dan bisnis Anda.</p>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-navy-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emeraldCustom-900 group-hover:text-emerald-300 transition-colors shadow-md">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-navy-950">Jasa Kontraktor & Bangunan</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Pengerjaan proyek konstruksi sipil, renovasi komersial, perumahan, hingga pemeliharaan fasilitas gedung secara menyeluruh.
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Bangunan Gedung & Gudang</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Pekerjaan Interior & Exterior</li>
+                        </ul>
+                    </div>
+                    <button onclick="openServiceDetail('Jasa Kontraktor & Bangunan', 'Pengerjaan profesional konstruksi fisik, infrastruktur, perencanaan arsitektural, hingga perizinan proyek.')" class="mt-6 w-full py-2.5 bg-slate-50 hover:bg-navy-900 hover:text-white text-navy-900 font-bold rounded-xl text-xs border border-slate-200 transition-all">
+                        Detail Layanan &rarr;
+                    </button>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-navy-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emeraldCustom-900 group-hover:text-emerald-300 transition-colors shadow-md">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-navy-950">Perdagangan Umum & Supplier</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Pengadaan bahan baku industri, peralatan kantor (ATK), mesin-mesin pendukung, dan barang konsumsi skala besar.
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Pengadaan Perlengkapan Pabrik</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Distribusi Sembako & Komoditas</li>
+                        </ul>
+                    </div>
+                    <button onclick="openServiceDetail('Perdagangan Umum & Supplier', 'Jaringan rantai pasok terpercaya untuk kebutuhan pengadaan barang pemerintah, swasta, dan ritel.')" class="mt-6 w-full py-2.5 bg-slate-50 hover:bg-navy-900 hover:text-white text-navy-900 font-bold rounded-xl text-xs border border-slate-200 transition-all">
+                        Detail Layanan &rarr;
+                    </button>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-navy-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emeraldCustom-900 group-hover:text-emerald-300 transition-colors shadow-md">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-navy-950">Layanan Logistik & Armada</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Pengiriman kargo darat, manajemen Pergudangan (Warehousing), dan penyewaan kendaraan operasional terintegrasi.
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Pengiriman Truk Box & Blindvan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Sistem Tracking Realtime</li>
+                        </ul>
+                    </div>
+                    <button onclick="openServiceDetail('Layanan Logistik & Armada', 'Solusi pengiriman muatan barang antar kota & provinsi dengan jaminan keandalan waktu.')" class="mt-6 w-full py-2.5 bg-slate-50 hover:bg-navy-900 hover:text-white text-navy-900 font-bold rounded-xl text-xs border border-slate-200 transition-all">
+                        Detail Layanan &rarr;
+                    </button>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-navy-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emeraldCustom-900 group-hover:text-emerald-300 transition-colors shadow-md">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-navy-950">Pelatihan & Kemitraan UMKM</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Program inkubasi bisnis, pelatihan manajemen usaha, dan bimbingan legalitas bagi jaringan UMKM mitra.
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-700 pt-2 border-t border-slate-100">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Sertifikasi & Akses Pasar</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emeraldCustom-600"></i> Bimbingan Manajemen Keuangan</li>
+                        </ul>
+                    </div>
+                    <button onclick="openServiceDetail('Pelatihan & Kemitraan UMKM', 'Mendorong kemandirian ekonomi masyarakat melalui pendampingan komprehensif berkesinambungan.')" class="mt-6 w-full py-2.5 bg-slate-50 hover:bg-navy-900 hover:text-white text-navy-900 font-bold rounded-xl text-xs border border-slate-200 transition-all">
+                        Detail Layanan &rarr;
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="program" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-goldCustom-600 font-extrabold text-xs tracking-widest uppercase bg-goldCustom-50 px-3 py-1 rounded-full border border-goldCustom-200">Tanggung Jawab Sosial (CSR)</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-3">Program Unggulan & Kemasyarakatan</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">Wujud nyata kontribusi sosial PT. Ridho Berkah Jaya untuk keberkahan sesama.</p>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- CSR 1 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 space-y-4 hover:border-emeraldCustom-600 transition-all">
+                    <div class="w-12 h-12 bg-emeraldCustom-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900">Program Kemitraan UMKM Berkah</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Memberikan pendampingan usaha, bantuan modal kerja bergulir, dan perluasan jaringan pemasaran bagi para pelaku usaha kecil di sekitar wilayah operasional.
+                    </p>
+                    <span class="inline-block text-[11px] text-emeraldCustom-700 font-semibold bg-emerald-50 px-2.5 py-1 rounded-md">100+ UMKM Terbina</span>
+                </div>
+
+                <!-- CSR 2 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 space-y-4 hover:border-emeraldCustom-600 transition-all">
+                    <div class="w-12 h-12 bg-navy-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900">Beasiswa Pendidikan Generasi Berkah</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Penyaluran beasiswa pendidikan bagi putra-putri berprestasi dari keluarga kurang mampu serta dukungan sarana tempat belajar/pesantren.
+                    </p>
+                    <span class="inline-block text-[11px] text-navy-800 font-semibold bg-slate-200 px-2.5 py-1 rounded-md">Beasiswa Rutin Tahunan</span>
+                </div>
+
+                <!-- CSR 3 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 space-y-4 hover:border-emeraldCustom-600 transition-all">
+                    <div class="w-12 h-12 bg-emeraldCustom-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy-900">Tanggap Bencana & Peduli Sosial</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Aksi cepat tanggap bencana alam, penyaluran sembako rutin ramadhan, dan perbaikan sarana ibadah masyarakat sekitar.
+                    </p>
+                    <span class="inline-block text-[11px] text-emeraldCustom-700 font-semibold bg-emerald-50 px-2.5 py-1 rounded-md">Aksi Sosial Berkala</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kalkulator" class="py-20 bg-navy-950 text-white relative bg-pattern-dots">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-emeraldCustom-900 text-emerald-300 font-extrabold text-xs tracking-widest uppercase px-3 py-1 rounded-full border border-emeraldCustom-700">Simulasi Interaktif</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-3">Kalkulator Estimasi Kerjasama</h2>
+                <p class="text-slate-300 text-sm sm:text-base mt-2">Dapatkan perkiraan awal kebutuhan anggaran proyek/layanan Anda secara instan.</p>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-navy-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <form id="calculator-form" oninput="calculateEstimate()" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Select Service -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Pilih Divisi / Layanan *</label>
+                            <select id="calc-service" class="w-full px-4 py-3 bg-navy-950 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-goldCustom-500">
+                                <option value="kontraktor">Jasa Kontraktor & Renovasi</option>
+                                <option value="supplier">Perdagangan Umum & Supplier</option>
+                                <option value="logistik">Layanan Logistik & Armada</option>
+                                <option value="pelatihan">Pelatihan / Pendampingan UMKM</option>
+                            </select>
+                        </div>
+
+                        <!-- Select Scale -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Skala Kebutuhan Proyek *</label>
+                            <select id="calc-scale" class="w-full px-4 py-3 bg-navy-950 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-goldCustom-500">
+                                <option value="1">Skala Kecil / Perintis</option>
+                                <option value="2.5" selected>Skala Menengah / Komersial</option>
+                                <option value="5">Skala Besar / Industri</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Additional Options -->
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">Layanan Tambahan (Opsional)</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="flex items-center gap-2 p-3 bg-navy-950 rounded-xl border border-slate-800 text-xs text-slate-300 cursor-pointer">
+                                <input type="checkbox" id="calc-opt-1" class="rounded accent-goldCustom-500">
+                                <span>Pengawasan Khusus K3</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-navy-950 rounded-xl border border-slate-800 text-xs text-slate-300 cursor-pointer">
+                                <input type="checkbox" id="calc-opt-2" class="rounded accent-goldCustom-500">
+                                <span>Pengiriman Ekspres / Prioritas</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-navy-950 rounded-xl border border-slate-800 text-xs text-slate-300 cursor-pointer">
+                                <input type="checkbox" id="calc-opt-3" class="rounded accent-goldCustom-500">
+                                <span>Laporan Audit & Garansi Ekstra</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Output Estimation Box -->
+                    <div class="p-6 bg-gradient-to-r from-navy-950 to-emeraldCustom-950 rounded-2xl border border-goldCustom-500/40 text-center space-y-2">
+                        <span class="text-xs text-slate-400 uppercase tracking-widest block font-bold">Estimasi Indikatif Anggaran Proyek</span>
+                        <div id="calc-result" class="text-3xl sm:text-4xl font-extrabold gold-gradient-text font-heading">
+                            Rp 25.000.000 - Rp 50.000.000
+                        </div>
+                        <p class="text-[11px] text-slate-400">*Nilai di atas merupakan estimasi awal. Hubungi tim kami untuk survey lokasi dan Rencana Anggaran Biaya (RAB) definitif.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#kontak" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-goldCustom-500 hover:bg-goldCustom-600 text-navy-950 font-bold rounded-xl text-sm transition-all shadow-md">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span>Minta Penawaran RAB Resmi</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emeraldCustom-700 font-extrabold text-xs tracking-widest uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Rekam Jejak Proyek</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-3">Portofolio & Dokumentasi</h2>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterGallery('all')" class="gallery-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-navy-900 text-white">Semua</button>
+                <button onclick="filterGallery('konstruksi')" class="gallery-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Konstruksi</button>
+                <button onclick="filterGallery('supplier')" class="gallery-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Supplier</button>
+                <button onclick="filterGallery('logistik')" class="gallery-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Logistik</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item konstruksi bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 shadow-md group relative">
+                    <div class="h-56 bg-navy-900 flex items-center justify-center text-goldCustom-400 text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div class="p-5 bg-white space-y-1">
+                        <span class="text-[10px] text-emeraldCustom-700 font-bold uppercase tracking-wider">Konstruksi Gedung</span>
+                        <h4 class="font-bold text-navy-950 text-base">Pembangunan Fasilitas Pergudangan</h4>
+                        <p class="text-xs text-slate-500">Penyelesaian proyek konstruksi area gudang terpadu seluas 2.000 m².</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item supplier bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 shadow-md group relative">
+                    <div class="h-56 bg-emeraldCustom-950 flex items-center justify-center text-emerald-400 text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <div class="p-5 bg-white space-y-1">
+                        <span class="text-[10px] text-goldCustom-600 font-bold uppercase tracking-wider">Perdagangan & Supplier</span>
+                        <h4 class="font-bold text-navy-950 text-base">Pengadaan Mesin Kemasan Pabrik</h4>
+                        <p class="text-xs text-slate-500">Penyediaan alat pabrikasi otomatis untuk mitra manufaktur.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item logistik bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 shadow-md group relative">
+                    <div class="h-56 bg-navy-950 flex items-center justify-center text-goldCustom-400 text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="p-5 bg-white space-y-1">
+                        <span class="text-[10px] text-emeraldCustom-700 font-bold uppercase tracking-wider">Logistik Armada</span>
+                        <h4 class="font-bold text-navy-950 text-base">Distribusi Bahan Baku Antar Pulau</h4>
+                        <p class="text-xs text-slate-500">Layanan pengiriman armada kargo darat & laut berjadwal.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-100/70 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-goldCustom-600 font-extrabold text-xs tracking-widest uppercase bg-goldCustom-50 px-3 py-1 rounded-full border border-goldCustom-200">Kepercayaan Klien</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-3">Apa Kata Mitra Bisnis Kami?</h2>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Testimonial Slider Container -->
+            <div class="max-w-3xl mx-auto relative">
+                <div id="testimonial-container" class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-lg text-center space-y-4">
+                    <div class="text-goldCustom-500 text-3xl">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p id="testi-text" class="text-slate-700 text-sm sm:text-base italic leading-relaxed">
+                        "PT. Ridho Berkah Jaya sangat responsif dan amanah dalam menggarap proyek renovasi dan pengadaan kantor kami. Pekerjaan selesai sesuai deadline dengan kualitas yang memuaskan."
+                    </p>
+                    <div>
+                        <h4 id="testi-author" class="font-bold text-navy-950 text-base">H. Irwan Setyadi</h4>
+                        <span id="testi-role" class="text-xs text-emeraldCustom-700 font-medium">Direktur Utama PT. Gemilang Mandiri</span>
+                    </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="flex justify-center gap-3 mt-6">
+                    <button onclick="prevTestimonial()" class="w-10 h-10 bg-white border border-slate-300 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-chevron-left text-xs"></i>
+                    </button>
+                    <button onclick="nextTestimonial()" class="w-10 h-10 bg-white border border-slate-300 hover:bg-navy-900 hover:text-white rounded-full flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-navy-950 text-white relative bg-pattern-dots">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-goldCustom-500/20 text-goldCustom-400 font-extrabold text-xs tracking-widest uppercase px-3 py-1 rounded-full border border-goldCustom-500/40">Hubungi Kami</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-3">Formulir Pengajuan Penawaran Kerjasama</h2>
+                <p class="text-slate-300 text-sm sm:text-base mt-2">Kirimkan rincian kebutuhan proyek Anda untuk mendapatkan proposal & penawaran resmi.</p>
+                <div class="w-20 h-1.5 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-navy-900 border border-slate-800 p-6 rounded-3xl space-y-6">
+                        <h3 class="font-bold text-xl text-goldCustom-400 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i> Kantor Pusat
+                        </h3>
+                        <ul class="space-y-4 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-building text-goldCustom-500 mt-1"></i>
+                                <span>Gedung Ridho Berkah Jaya, Jl. Raya Utama Bisnis No. 88, Jakarta Selatan, DKI Jakarta 12340</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-goldCustom-500"></i>
+                                <span>(021) 8899-7766 / WA: 0812-3456-7890</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-goldCustom-500"></i>
+                                <span>penawaran@ridhoberkahjaya.co.id</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-clock text-goldCustom-500"></i>
+                                <span>Senin - Jumat: 08:00 - 17:00 WIB</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-emeraldCustom-950 to-navy-900 border border-emeraldCustom-700/50 p-6 rounded-3xl space-y-3">
+                        <h4 class="font-bold text-white text-base flex items-center gap-2">
+                            <i class="fa-solid fa-headset text-goldCustom-400"></i> Respon Cepat 24 Jam
+                        </h4>
+                        <p class="text-xs text-slate-300">Butuh konsultasi mendesak untuk proyek tender? Kontak tim representatif kami melalui WhatsApp resmi.</p>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-goldCustom-400 hover:underline">
+                            Chat Tim Operasional Sekarang &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                        <form id="offer-form" onsubmit="handleOfferSubmit(event)" class="space-y-4">
+                            <h3 class="font-heading font-bold text-xl text-navy-950 border-b border-slate-100 pb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-file-signature text-goldCustom-600"></i> Rincian Pengaju / Perusahaan
+                            </h3>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap Pengaju *</label>
+                                    <input type="text" id="form-nama" required placeholder="Contoh: Ahmad Fauzi" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emeraldCustom-600">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Perusahaan / Instansi *</label>
+                                    <input type="text" id="form-perusahaan" required placeholder="PT / CV / Instansi Anda" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emeraldCustom-600">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
+                                    <input type="tel" id="form-hp" required placeholder="081234567890" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emeraldCustom-600">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 mb-1">Kategori Layanan *</label>
+                                    <select id="form-layanan" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emeraldCustom-600">
+                                        <option value="Jasa Kontraktor">Jasa Kontraktor & Bangunan</option>
+                                        <option value="Perdagangan Umum & Supplier">Perdagangan Umum & Supplier</option>
+                                        <option value="Layanan Logistik">Layanan Logistik & Fleet</option>
+                                        <option value="Program Kemitraan UMKM">Program Kemitraan UMKM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Deskripsi Ringkas Kebutuhan Proyek *</label>
+                                <textarea id="form-pesan" required rows="3" placeholder="Tuliskan detail lokasi, estimasi timeline, dan spesifikasi pekerjaan..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emeraldCustom-600"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-gradient-to-r from-goldCustom-500 to-goldCustom-600 hover:from-goldCustom-600 hover:to-goldCustom-700 text-navy-950 font-bold rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Kirim Pengajuan Penawaran</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-goldCustom-500 rounded-xl flex items-center justify-center text-navy-950 font-bold text-xl">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <span class="font-heading font-bold text-xl text-white">PT. RIDHO BERKAH JAYA</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Mitra terpercaya solusi bisnis, general contractor, perdagangan umum, distributor supplier, logistik, dan pengembangan kemitraan UMKM berintegritas tinggi.
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 bg-navy-900 hover:bg-goldCustom-500 hover:text-navy-950 text-goldCustom-400 rounded-xl flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-navy-900 hover:bg-goldCustom-500 hover:text-navy-950 text-goldCustom-400 rounded-xl flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 bg-navy-900 hover:bg-goldCustom-500 hover:text-navy-950 text-goldCustom-400 rounded-xl flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 bg-navy-900 hover:bg-goldCustom-500 hover:text-navy-950 text-goldCustom-400 rounded-xl flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-bold text-white text-sm tracking-wider uppercase">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#profil" class="hover:text-goldCustom-400">Profil Perusahaan</a></li>
+                        <li><a href="#layanan" class="hover:text-goldCustom-400">Layanan & Sektor Usaha</a></li>
+                        <li><a href="#program" class="hover:text-goldCustom-400">Program Kemitraan CSR</a></li>
+                        <li><a href="#kalkulator" class="hover:text-goldCustom-400">Kalkulator Biaya</a></li>
+                        <li><a href="#galeri" class="hover:text-goldCustom-400">Portofolio Proyek</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="font-bold text-white text-sm tracking-wider uppercase">Legalitas & Sertifikasi</h4>
+                    <p class="text-xs text-slate-400">Berbadan hukum resmi dengan kelengkapan NIB, SIUP, SK Kemenkumham, serta sertifikasi standar mutu ISO.</p>
+                    <div class="pt-2 flex gap-2">
+                        <span class="px-2.5 py-1 bg-navy-900 border border-slate-700 rounded text-[10px] text-emerald-400 font-mono">NIB: 1234567890XXX</span>
+                        <span class="px-2.5 py-1 bg-navy-900 border border-slate-700 rounded text-[10px] text-goldCustom-400 font-mono">AHU-00123.AH.01</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+                <p>&copy; 2026 PT. Ridho Berkah Jaya. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modal -->
+    <div id="service-modal" class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-4 text-slate-800 relative">
+            <div class="w-14 h-14 bg-emeraldCustom-900 text-goldCustom-400 rounded-2xl flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h3 id="modal-service-title" class="text-xl font-bold text-navy-950"></h3>
+            <p id="modal-service-desc" class="text-xs text-slate-600 leading-relaxed"></p>
+            <div class="pt-4 border-t border-slate-100 flex justify-end gap-2">
+                <button onclick="closeServiceModal()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold">Tutup</button>
+                <a href="#kontak" onclick="closeServiceModal()" class="px-4 py-2 bg-goldCustom-500 hover:bg-goldCustom-600 text-navy-950 rounded-xl text-xs font-bold">Ajukan Kerjasama</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-4 text-center">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-navy-950">Pengajuan Berhasil Terkirim!</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                Terima kasih <strong id="success-nama"></strong>. Pengajuan penawaran untuk <strong id="success-perusahaan"></strong> telah kami terima dengan nomor referensi:
+            </p>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-mono text-sm font-bold text-goldCustom-600" id="success-ref">
+                REF-RBJ-2026-0000
+            </div>
+            <div class="flex gap-2 pt-2">
+                <button onclick="closeSuccessModal()" class="w-1/2 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Selesai</button>
+                <a id="success-wa-link" href="#" target="_blank" class="w-1/2 py-2.5 bg-emeraldCustom-700 hover:bg-emeraldCustom-800 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Kirim Ke WA
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Service Modal Handler
+        function openServiceDetail(title, description) {
+            document.getElementById('modal-service-title').innerText = title;
+            document.getElementById('modal-service-desc').innerText = description;
+            document.getElementById('service-modal').classList.remove('hidden');
+        }
+
+        function closeServiceModal() {
+            document.getElementById('service-modal').classList.add('hidden');
+        }
+
+        // Calculator Interactive Logic
+        function calculateEstimate() {
+            const service = document.getElementById('calc-service').value;
+            const scale = parseFloat(document.getElementById('calc-scale').value);
+            const opt1 = document.getElementById('calc-opt-1').checked;
+            const opt2 = document.getElementById('calc-opt-2').checked;
+            const opt3 = document.getElementById('calc-opt-3').checked;
+
+            let baseMin = 10000000;
+            let baseMax = 25000000;
+
+            if (service === 'kontraktor') { baseMin = 25000000; baseMax = 60000000; }
+            else if (service === 'supplier') { baseMin = 15000000; baseMax = 40000000; }
+            else if (service === 'logistik') { baseMin = 8000000; baseMax = 20000000; }
+            else if (service === 'pelatihan') { baseMin = 5000000; baseMax = 15000000; }
+
+            let totalMin = baseMin * scale;
+            let totalMax = baseMax * scale;
+
+            if (opt1) { totalMin += 3000000; totalMax += 5000000; }
+            if (opt2) { totalMin += 2000000; totalMax += 4000000; }
+            if (opt3) { totalMin += 4000000; totalMax += 8000000; }
+
+            const formattedMin = 'Rp ' + Math.round(totalMin).toLocaleString('id-ID');
+            const formattedMax = 'Rp ' + Math.round(totalMax).toLocaleString('id-ID');
+
+            document.getElementById('calc-result').innerText = `${formattedMin} - ${formattedMax}`;
+        }
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const btns = document.querySelectorAll('.gallery-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-navy-900', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('bg-navy-900', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Testimonial Carousel
+        const testimonials = [
+            {
+                text: '"PT. Ridho Berkah Jaya sangat responsif dan amanah dalam menggarap proyek renovasi dan pengadaan kantor kami. Pekerjaan selesai sesuai deadline dengan kualitas yang memuaskan."',
+                author: 'H. Irwan Setyadi',
+                role: 'Direktur Utama PT. Gemilang Mandiri'
+            },
+            {
+                text: '"Kerjasama rantai pasok logistik armada berjalan sangat mulus. Sistem tracking dan ketepatan pengiriman bahan baku produksi kami terjaga dengan baik."',
+                author: 'Siti Rahmawati',
+                role: 'Head of Procurement BUMN Manufaktur'
+            },
+            {
+                text: '"Program pelatihan dan pendampingan UMKM dari PT. Ridho Berkah Jaya memberikan dampak langsung pada peningkatan kualitas pengelolaan usaha kelompok kami."',
+                author: 'Budi Santoso',
+                role: 'Ketua Jaringan UMKM Berkah'
+            }
+        ];
+
+        let currentTestiIndex = 0;
+
+        function updateTestimonial() {
+            const testi = testimonials[currentTestiIndex];
+            document.getElementById('testi-text').innerText = testi.text;
+            document.getElementById('testi-author').innerText = testi.author;
+            document.getElementById('testi-role').innerText = testi.role;
+        }
+
+        function nextTestimonial() {
+            currentTestiIndex = (currentTestiIndex + 1) % testimonials.length;
+            updateTestimonial();
+        }
+
+        function prevTestimonial() {
+            currentTestiIndex = (currentTestiIndex - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial();
+        }
+
+        // Offer Form Handler
+        function handleOfferSubmit(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById('form-nama').value;
+            const perusahaan = document.getElementById('form-perusahaan').value;
+            const hp = document.getElementById('form-hp').value;
+            const layanan = document.getElementById('form-layanan').value;
+            const pesan = document.getElaementById('form-pesan').value;
+            const refCode = 'REF-RBJ-2026-' + Math.floor(1000 + Math.random() * 9000);
+
+            document.getElementById('success-nama').innerText = nama;
+            document.getElementById('success-perusahaan').innerText = perusahaan;
+            document.getElementById('success-ref').innerText = refCode;
+
+            const waMsg = encodeURIComponent(`Halo PT. Ridho Berkah Jaya,\n\nSaya ingin menindaklanjuti pengajuan penawaran:\n- No. Ref: ${refCode}\n- Nama: ${nama}\n- Perusahaan: ${perusahaan}\n- Layanan: ${layanan}\n- Detail: ${pesan}`);
+            document.getElementById('success-wa-link').href = `https://wa.me/6281234567890?text=${waMsg}`;
+
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+            document.getElementById('offer-form').reset();
+        }
+    </script>
+</body>
+</html>
